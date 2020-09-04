@@ -1,0 +1,31 @@
+{
+  "name": "nodecrmusingmysql",
+  "version": "1.0.0",
+  "description": "Nodejs+Sequelize based CRM using mySql",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "jwt",
+    "passport",
+    "express"
+  ],
+  "author": "Adnan Khan Khadukhel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^7.4.2",
+    "mysql": "^2.14.1",
+    "mysql2": "^1.6.1",
+    "nodemon": "^1.18.3",
+    "sequelize": "^4.44.4"
+  },
+  "devDependencies": {
+    "bcrypt": "^5.0.0"
+  }
+}
