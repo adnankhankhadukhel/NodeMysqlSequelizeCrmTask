@@ -27,7 +27,7 @@ router.route('/login').post(UsersCtrl.login);
 router.route('/deleteUser').delete(middleware.verifyToken, UsersCtrl.deleteUser);
 router.route('/listCustomers').get(middleware.verifyToken, UsersCtrl.listCustomers);
 router.route('/updateStatus').put(middleware.verifyToken, UsersCtrl.updateStatus);
-router.route('/addCustInfo').post(InfoCtrl.addCustInfo);
+router.route('/addCustInfo').post(middleware.verifyToken, InfoCtrl.addCustInfo);
 
 // //testing api
 router.route('/health-check').get(UsersCtrl.healthcheck);
