@@ -159,7 +159,11 @@ exports.deleteUser = (req, res) => {
 // find all customers
 exports.listCustomers = (req, res) => {
   try {
-    User.findAll({})
+    User.findAll({
+        where: {
+          user_role: "customer"
+        }
+      })
       .then(data => {
         res.status(200).send({
           "message": "customers listed",
